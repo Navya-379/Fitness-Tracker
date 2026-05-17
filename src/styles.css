@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply m-0 overflow-x-hidden antialiased;
+  }
+
+  ::selection {
+    @apply bg-emerald-500 text-white;
+  }
+}
+
+@layer components {
+  .section {
+    @apply mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24;
+  }
+
+  .section-head {
+    @apply mx-auto mb-10 max-w-3xl text-center;
+  }
+
+  .section-head p {
+    @apply mb-3 text-sm font-black uppercase tracking-[0.18em] text-emerald-600;
+  }
+
+  .section-head h2 {
+    @apply text-3xl font-black tracking-tight text-neutral-950 dark:text-white sm:text-5xl;
+  }
+}
